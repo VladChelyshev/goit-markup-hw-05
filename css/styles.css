@@ -630,7 +630,9 @@ main {
 .modal-form-message::placeholder {
   color: rgba(46, 47, 66, 0.4);
 }
-
+.modal-form-agreement {
+  margin-bottom: 24px;
+}
 .modal-form-agreement-text {
   font-weight: 400;
   font-size: 12px;
@@ -721,38 +723,35 @@ input[type='checkbox']:checked + label .modal-form-checkbox {
   border-radius: 4px;
   width: 264px;
   height: 40px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  outline: none;
+  font-family: 'Roboto', sans-serif;
   background-color: transparent;
-  padding-left: 16px;
-  color: #ffffff;
-  margin-right: 24px;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
 }
 .btn-sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; /* gap: 16px; */
   border-radius: 4px;
   padding: 8px 24px;
-  min-width: 165px;
+  width: 165px;
   height: 40px;
-  outline: none;
   background: #4d5ae5;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  padding: 8px 24px;
+  color: #fff;
   cursor: pointer;
-  font-family: 'Roboto', sans-serif;
-  background-color: #4d5ae5;
   border: none;
+  min-width: 165px;
 }
 .icon-send {
   fill: #fff;
@@ -760,4 +759,7 @@ input[type='checkbox']:checked + label .modal-form-checkbox {
 }
 .form-subscribe {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
